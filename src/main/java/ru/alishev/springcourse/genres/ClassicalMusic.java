@@ -1,11 +1,12 @@
-package ru.alishev.springcourse;
+package ru.alishev.springcourse.genres;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import ru.alishev.springcourse.Music;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Scope("singleton")
 public class ClassicalMusic implements Music {
 
     @PostConstruct
