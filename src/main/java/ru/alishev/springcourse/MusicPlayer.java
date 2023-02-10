@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Scope;
 import java.util.List;
 import java.util.Random;
 
+@Scope("singleton")
 public class MusicPlayer {
     @Value("${musicPlayer.name}")
     private String name;

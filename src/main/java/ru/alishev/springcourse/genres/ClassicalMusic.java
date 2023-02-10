@@ -7,6 +7,7 @@ import ru.alishev.springcourse.Music;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+@Scope("singleton")
 public class ClassicalMusic implements Music {
 
     @PostConstruct

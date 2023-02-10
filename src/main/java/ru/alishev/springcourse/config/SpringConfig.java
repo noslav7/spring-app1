@@ -13,7 +13,6 @@ import java.util.List;
 @PropertySource("classpath:musicPlayer.properties")
 public class SpringConfig {
     @Bean
-    @Scope("prototype")
     public ClassicalMusic classicalMusic() {
         return new ClassicalMusic();
     }
